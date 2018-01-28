@@ -11,6 +11,8 @@ app.get('/', function (req, res) {
     <!DOCTYPE html>
     <html>
     <head>
+      <meta name="viewport" content="width=device-width">
+      <link href="/main.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <div id="main">

@@ -1,0 +1,163 @@
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.checkbox-hidden {
+  display: none;
+}
+
+.container-outer {
+  clear: left;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background: #90caf9;
+}
+
+.container-inner {
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 50%;
+  background: #e3f2fd;
+}
+
+.left {
+    float: left;
+    width: 46%;
+    position: relative;
+    left: 52%;
+    overflow: hidden;
+}
+
+.right {
+    float: left;
+    width: 46%;
+    position: relative;
+    left: 56%;
+    overflow: hidden;
+}
+
+.question {
+  line-height: 40px;
+  padding: 10px;
+  background-color: #bbdefb;
+  margin-bottom: 8px;
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.questions-list {
+  padding: 20px 0;
+}
+
+.btn-grp {
+  text-align: center;
+}
+
+.button-input {
+    padding: 12px;
+    width: 120px;
+    border: 4px solid #0d47a1;
+    background-color: #0d47a1;
+    color: white;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 100px;
+    transition: 0.3s ease-in-out;
+}
+
+.button-input:hover {
+  border-color: black;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.checkbox {
+  border: 1px solid black;
+  padding: 10px;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  background-color: white;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.checkbox:checked {
+  background-color: darkblue;
+  transition: 0.3s ease-in-out;
+}
+
+.text-input {
+  width: calc(90% - 120px);
+  padding: 12px;
+}
+
+.question-txt {
+  display: inline;
+  vertical-align: middle;
+}
+
+.label-input {
+  display: inline-block;
+  width: 100px;
+}
+.question-editor div {
+    padding: 5px;
+}
+
+.save-msg {
+  position: fixed;
+  width: 200px;
+  left: 50%;
+  top: 50%;
+  height: 50px;
+  margin-left: -100px;
+  text-align: center;
+  margin-top: -25px;
+  background: black;
+  color: white;
+  padding: 12px;
+  line-height: 50px;
+  border-radius: 100px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+  visibility: visible;
+}
+
+.button-input.close-btn {
+  padding: 4px;
+  margin: 0;
+  width: 72px;
+  float: right;
+}
+
+
+@media screen and (max-device-width: 755px),screen and (max-width:755px) {
+  .container-outer {
+    background-color: #e3f2fd;
+    overflow: visible;
+  }
+  .left {
+    width: 96%;
+  }
+  .right {
+    display: none;
+    position: absolute;
+    background: #90caf9;
+    width: calc(100% - 20px);
+    left: 48%;
+    padding: 20px;
+    height: 100%;
+    min-height: 574px;
+  }
+}
